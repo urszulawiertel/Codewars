@@ -3,11 +3,10 @@ func take(_ arr: [Int], _ n: Int) -> [Int] {
         return []
     }
     var newArr = [Int]()
-    var maxSubscript = n
     if arr.count < n {
-        maxSubscript = arr.count
+        return arr
     }
-    for i in 0..<maxSubscript {
+    for i in 0..<n {
         newArr.append(arr[i])
     }
     return newArr
